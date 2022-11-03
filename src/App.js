@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Gallery from "./components/Gallery";
+import Projects from "./components/Projects";
 import Nav from "./components/Nav";
+import Resume from "./components/Resume";
 
 function App() {
   const [currentPage, setCurrentPage] = useState('about');
@@ -12,7 +13,8 @@ function App() {
       <main>
         <About></About>
         <Contact></Contact>
-        <Gallery></Gallery>
+        <Projects></Projects>
+        <Resume></Resume>
       </main>
     </div>
   );
