@@ -3,6 +3,7 @@ import React from "react";
 function About() {
   return (
     <section>
+      <h1>About Me</h1>
       <p>
         My name is Marielle Nwana and I'm an NYC-based data analyst.
         <br></br><br></br>
