@@ -13,7 +13,7 @@ function Footer() {
             <a href="https://www.linkedin.com/in/mnwana"> LinkedIn </a>
           </li>
           <li className="col-md-2 list-group-item">
-            <a href="htts://www.instagram.com/marntech"> Instagram </a>
+            <a href="https://www.instagram.com/marntech"> Instagram </a>
           </li>
         </ul>
   </footer> );
