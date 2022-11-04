@@ -100,7 +100,7 @@ function Projects(props) {
   ]);
 
   const toggleModal = (project) => {
-    setProjectSelected({ project });
+    setProjectSelected( project );
     setShowModal(!showModal);
   };
 
@@ -108,9 +108,11 @@ function Projects(props) {
     return (
       <section>
         <h1>Projects</h1>
+        {/* <Modal showModal={showModal} projectSelected = {projectSelected} toggleModal={toggleModal}></Modal> */}
+
         {showModal && (
-          <Modal onClose={toggleModal} projectSelected={projectSelected} />
-        )}
+        <Modal onClose={toggleModal} projectSelected={projectSelected} />
+      )}
         <div className="row">
           {/* add 2 featured projects with gif, description and url in card*/}
           {projects.map((project) => (
