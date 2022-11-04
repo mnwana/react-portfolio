@@ -118,7 +118,7 @@ function Projects(props) {
               <img
                 alt={project.title}
                 src={
-                  require(`../../assets/projects/${project.fileName}`)
+                  require(`../../assets/projects/${project.fileName}`).default
                 }
                 className="img-thumbnail mx-1"
                 onClick={() => toggleModal(project)}
