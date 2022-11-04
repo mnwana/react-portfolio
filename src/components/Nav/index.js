@@ -1,7 +1,7 @@
 import React from "react";
 
 function Nav(props) {
-  const { pageSelected, setCurrentPage } = props;
+  const {setCurrentPage } = props;
   return (
     <section>
       <h2>Marielle Nwana</h2>

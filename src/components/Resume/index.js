@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import resumeFile from "../../assets/resume.pdf";
 function Resume(props) {
   const {pageSelected} = props;
   if(pageSelected === 'resume'){
-  function onDocumentLoadSuccess() {
-  }
   return (
     <section>
       <iframe
