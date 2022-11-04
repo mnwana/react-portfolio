@@ -1,6 +1,6 @@
 import React from "react";
 
-function Modal({ projectSelected, showModal, onClose }) {
+function Modal({ projectSelected, onClose }) {
   const { title, fileName, languages, description, repo } = projectSelected;
   return (
     <div className="modalBackdrop">

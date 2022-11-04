@@ -3,8 +3,8 @@ import React from "react";
 function Nav(props) {
   const { setCurrentPage } = props;
   return (
-    <section className="row">
-      <h2 className="col-md-2">
+    <section className="row bg-primary">
+      <h2 className="col-md-3">
         <a
           onClick={() => setCurrentPage("about")}
           href="/"
@@ -13,43 +13,43 @@ function Nav(props) {
           Marielle Nwana
         </a>
       </h2>
-      <nav className="col-md-10">
+      <nav className="col-md-9">
         <ul className="flex-row nav">
           <li className="nav-item">
             <a
-              className="nav-link"
+              className="nav-link  text-dark"
               data-testid="about"
-              href="/about"
+              href="#about"
               onClick={() => setCurrentPage("about")}
             >
               About me
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ">
             <a
-              className="nav-link"
+              className="nav-link text-dark"
               data-testid="projects"
-              href="/projects"
+              href="#projects"
               onClick={() => setCurrentPage("projects")}
             >
               Projects
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ">
             <a
-              className="nav-link"
+              className="nav-link text-dark"
               data-testid="resume"
-              href="/resume"
+              href="#resume"
               onClick={() => setCurrentPage("resume")}
             >
               Resume
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ">
             <a
-              className="nav-link"
+              className="nav-link text-dark"
               data-testid="contact"
-              href="/contact"
+              href="#contact"
               onClick={() => setCurrentPage("contact")}
             >
               Contact Me

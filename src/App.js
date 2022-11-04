@@ -5,9 +5,9 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Nav from "./components/Nav";
 import Resume from "./components/Resume";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
-  const [pageSelected, setCurrentPage] = useState("projects");
+  const [pageSelected, setCurrentPage] = useState("about");
   return (
     <div>
       <Nav pageSelected={pageSelected} setCurrentPage={setCurrentPage}></Nav>
