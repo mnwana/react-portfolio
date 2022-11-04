@@ -6,15 +6,15 @@ import Nav from "./components/Nav";
 import Resume from "./components/Resume";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('about');
+  const [pageSelected, setCurrentPage] = useState("about");
   return (
     <div>
-      <Nav></Nav>
+      <Nav pageSelected={pageSelected} setCurrentPage={setCurrentPage}></Nav>
       <main>
-        <About></About>
-        <Contact></Contact>
-        <Projects></Projects>
-        <Resume></Resume>
+        <About pageSelected={pageSelected}></About>
+        <Contact pageSelected={pageSelected}></Contact>
+        <Projects pageSelected={pageSelected}></Projects>
+        <Resume pageSelected={pageSelected}></Resume>
       </main>
     </div>
   );

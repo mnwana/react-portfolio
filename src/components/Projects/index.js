@@ -20,7 +20,7 @@ function Projects() {
             <img
               // src={require(`../../assets/projects/${project.fileName}`).default}
               alt={project.title}
-              key={project.description}
+              key={project.title}
             />
             <h4>{project.languages}</h4>
           </div>
