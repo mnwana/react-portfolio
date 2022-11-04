@@ -35,7 +35,7 @@ function Projects(props) {
       repo: "github.com",
     },
     {
-      title: "Javascript Fundamentals Quiz",
+      title: "Javascript Quiz",
       fileName: "javascript_quiz.png",
       languages: ["Javascript", "CSS"],
       description: "testing",
@@ -63,7 +63,7 @@ function Projects(props) {
       repo: "github.com",
     },
     {
-      title: "Secure Password Generator",
+      title: "Secure Password Gen",
       fileName: "secure-password-gen.png",
       languages: ["Javascript", "CSS"],
       description: "testing",
@@ -91,7 +91,7 @@ function Projects(props) {
       repo: "github.com",
     },
     {
-      title: "Stay Dry Weather Dashboard",
+      title: "Weather Dashboard",
       fileName: "weather-dashboard.png",
       languages: ["Javascript", "CSS"],
       description: "testing",
@@ -111,19 +111,21 @@ function Projects(props) {
         {showModal && (
           <Modal onClose={toggleModal} projectSelected={projectSelected} />
         )}
-        <div>
+        <div className="row">
           {projects.map((project) => (
-            <div key={project.title}>
-              <h3>{project.title}</h3>
-              <img
-                alt={project.title}
-                src={
-                  require(`../../assets/projects/${project.fileName}`).default
-                }
-                className="img-thumbnail mx-1"
-                onClick={() => toggleModal(project)}
-              />
-              {/* <h4>{project.languages}</h4> */}
+            <div className="col-md-3" key={project.title}>
+              <div className="thumbnail">
+                <h3>{project.title}</h3>
+                <img
+                  alt={project.title}
+                  src={
+                    require(`../../assets/projects/${project.fileName}`).default
+                  }
+                  className="img-thumbnail mx-1"
+                  onClick={() => toggleModal(project)}
+                />
+                {/* <h4>{project.languages}</h4> */}
+              </div>
             </div>
           ))}
         </div>
