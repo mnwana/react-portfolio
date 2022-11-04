@@ -1,8 +1,8 @@
 import React from "react";
 
 function Footer() {
-  return (<footer className="mt-4">
-            <ul className="row">
+  return (<footer className="mt-4 justify-content-center">
+            <ul className="row justify-content-center text-center p-0">
           <li className="col-md-2 list-group-item">
             <a href="mailto:mariellenwana@gmail.com"> Email </a>
           </li>

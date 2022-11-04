@@ -47,7 +47,7 @@ function Contact(props) {
 
   if (pageSelected === "contact") {
     return (
-      <section className="form-group col-md-6">
+      <section className="form-group col-md-6 mx-auto justify-content-center">
         <h1 className="text-center">Contact Me</h1>
         <form id="contact-form" onSubmit={handleSubmit}>
           <div>

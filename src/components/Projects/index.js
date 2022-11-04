@@ -12,7 +12,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Daily Schedule Planner",
@@ -20,7 +20,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Ecommerce Backend",
@@ -28,7 +28,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Employee Tracker",
@@ -36,7 +36,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Javascript Quiz",
@@ -44,7 +44,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "My Medication List",
@@ -52,7 +52,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Quick Notes",
@@ -60,7 +60,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Readme Generator",
@@ -68,7 +68,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Secure Password Gen",
@@ -76,7 +76,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Social Network Backend",
@@ -84,7 +84,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Team Profile Generator",
@@ -92,7 +92,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Text Editor",
@@ -100,7 +100,7 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
     {
       title: "Weather Dashboard",
@@ -108,30 +108,35 @@ liveDeploy: "github.com",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
-liveDeploy: "github.com",
+      liveDeploy: "github.com",
     },
   ]);
 
   const toggleModal = (project) => {
-    setProjectSelected( project );
+    setProjectSelected(project);
     setShowModal(!showModal);
   };
 
   if (pageSelected === "projects") {
     return (
-      <section >
+      <section>
         <h1>Projects</h1>
         {/* <Modal showModal={showModal} projectSelected = {projectSelected} toggleModal={toggleModal}></Modal> */}
 
         {showModal && (
-        <Modal onClose={toggleModal} projectSelected={projectSelected} />
-      )}
-        <div className="row">
+          <Modal onClose={toggleModal} projectSelected={projectSelected} />
+        )}
+        <div className="row mx-auto justify-content-center">
           {/* add 2 featured projects with gif, description and url in card*/}
           {projects.map((project) => (
-            <div className="col-md-3 card m-md-2 bg-secondary text-center" key={project.title}>
+            <div
+              className="col-md-3 card m-md-2 bg-secondary text-center rounded-0"
+              key={project.title}
+            >
               <div className="thumbnail ">
-                <h3 className="card-title bg-primary text-light mx-0 p-0 text-center">{project.title}</h3>
+                <h3 className="card-title bg-primary text-light mx-0 p-0 text-center">
+                  {project.title}
+                </h3>
                 <img
                   alt={project.title}
                   src={

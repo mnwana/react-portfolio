@@ -4,11 +4,11 @@ function Resume(props) {
   const { pageSelected } = props;
   if (pageSelected === "resume") {
     return (
-      <section className="col-md-6 text-center vh-100">
+      <section className="col-md-6 text-center vh-100 mx-auto justify-content-center">
         <h2>Resume</h2>
         <iframe
           title="Resume"
-          style={{ width: "100%", height: "75%" }}
+          style={{ width: "100%", height: "60%" }}
           src={resumeFile}
         />
         <button className="button" type="submit">
