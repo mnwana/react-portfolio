@@ -5,15 +5,16 @@ function Modal({ projectSelected, showModal, onClose }) {
     return (
       <div className="modalBackdrop">
         <div className="modalContainer">
-          <h3 className="modalTitle">{title} </h3>
+          <h3 className="modalTitle ">{title} </h3>
+          <h4>{languages}</h4>
           <img
             alt={title}
             src={require(`../../assets/projects/${fileName}`).default}
             className="img-thumbnail rounded mx-1"
           />
           <p>{description}</p>
-          <button type="button" onClick={onClose}>
-            Close this modal
+          <button type="button" onClick={onClose} className="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
           </button>
         </div>
       </div>
