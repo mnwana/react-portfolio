@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-function Projects() {
+function Projects(props) {
+  const {pageSelected} = props;
+
   const [projects] = useState([
     {
       title: "Testing",
@@ -9,6 +11,7 @@ function Projects() {
       description: "testing",
     },
   ]);
+  if(pageSelected === 'projects'){
   return (
     <section>
       <h1>Projects</h1>
@@ -27,7 +30,8 @@ function Projects() {
         ))}
       </div>
     </section>
-  );
+  );}
+  return;
 }
 
 export default Projects;

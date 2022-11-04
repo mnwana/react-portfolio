@@ -1,6 +1,8 @@
 import React from "react";
 
-function Contact() {
+function Contact(props) {
+  const {pageSelected} = props;
+  if(pageSelected === 'contact'){
   return (
     <section>
       <h1>Contact Me</h1>
@@ -21,6 +23,8 @@ function Contact() {
       </form>
     </section>
   );
+  }
+  return;
 }
 
 export default Contact;

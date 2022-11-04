@@ -20,7 +20,7 @@ function Nav(props) {
             <a
               data-testid="projects"
               href="#projects"
-              // onClick={() => setCurrentPage("projects")}
+              onClick={() => setCurrentPage("projects")}
             >
               Projects
             </a>

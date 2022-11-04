@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import resumeFile from "../../assets/resume.pdf";
-function Resume() {
+function Resume(props) {
+  const {pageSelected} = props;
+  if(pageSelected === 'resume'){
   function onDocumentLoadSuccess() {
   }
   return (
@@ -12,7 +14,8 @@ function Resume() {
       />
       <button>Download Resume</button>
     </section>
-  );
+  );}
+  return;
 }
 
 export default Resume;
