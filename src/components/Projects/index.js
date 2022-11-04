@@ -112,16 +112,17 @@ function Projects(props) {
           <Modal onClose={toggleModal} projectSelected={projectSelected} />
         )}
         <div className="row">
+          {/* add 2 featured projects with gif, description and url in card*/}
           {projects.map((project) => (
-            <div className="col-md-3" key={project.title}>
-              <div className="thumbnail">
-                <h3>{project.title}</h3>
+            <div className="col-md-3 card m-md-2" key={project.title}>
+              <div className="thumbnail ">
+                <h3 className="card-title bg-light ">{project.title}</h3>
                 <img
                   alt={project.title}
                   src={
                     require(`../../assets/projects/${project.fileName}`).default
                   }
-                  className="img-thumbnail mx-1"
+                  className="img-thumbnail rounded mx-1"
                   onClick={() => toggleModal(project)}
                 />
                 {/* <h4>{project.languages}</h4> */}
