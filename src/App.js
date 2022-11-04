@@ -7,11 +7,11 @@ import Nav from "./components/Nav";
 import Resume from "./components/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
-  const [pageSelected, setCurrentPage] = useState("about");
+  const [pageSelected, setCurrentPage] = useState( 'about');
   return (
-    <div>
+    <div className="flex">
       <Nav pageSelected={pageSelected} setCurrentPage={setCurrentPage}></Nav>
-      <main className="container">
+      <main className="container row  justify-content-center">
         <About pageSelected={pageSelected}></About>
         <Contact pageSelected={pageSelected}></Contact>
         <Projects pageSelected={pageSelected}></Projects>

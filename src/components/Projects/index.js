@@ -12,6 +12,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Daily Schedule Planner",
@@ -19,6 +20,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Ecommerce Backend",
@@ -26,6 +28,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Employee Tracker",
@@ -33,6 +36,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Javascript Quiz",
@@ -40,6 +44,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "My Medication List",
@@ -47,6 +52,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Quick Notes",
@@ -54,6 +60,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Readme Generator",
@@ -61,6 +68,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Secure Password Gen",
@@ -68,6 +76,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Social Network Backend",
@@ -75,6 +84,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Team Profile Generator",
@@ -82,6 +92,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Text Editor",
@@ -89,6 +100,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
     {
       title: "Weather Dashboard",
@@ -96,6 +108,7 @@ function Projects(props) {
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",
+liveDeploy: "github.com",
     },
   ]);
 
@@ -106,7 +119,7 @@ function Projects(props) {
 
   if (pageSelected === "projects") {
     return (
-      <section>
+      <section >
         <h1>Projects</h1>
         {/* <Modal showModal={showModal} projectSelected = {projectSelected} toggleModal={toggleModal}></Modal> */}
 
@@ -116,9 +129,9 @@ function Projects(props) {
         <div className="row">
           {/* add 2 featured projects with gif, description and url in card*/}
           {projects.map((project) => (
-            <div className="col-md-3 card m-md-2 bg-secondary" key={project.title}>
+            <div className="col-md-3 card m-md-2 bg-secondary text-center" key={project.title}>
               <div className="thumbnail ">
-                <h3 className="card-title bg-primary text-light mx-0 p-0 ">{project.title}</h3>
+                <h3 className="card-title bg-primary text-light mx-0 p-0 text-center">{project.title}</h3>
                 <img
                   alt={project.title}
                   src={
@@ -127,6 +140,7 @@ function Projects(props) {
                   className="img-thumbnail rounded mx-1"
                   onClick={() => toggleModal(project)}
                 />
+                <p className="card-subtitle">{project.languages}</p>
                 {/* <h4>{project.languages}</h4> */}
               </div>
             </div>

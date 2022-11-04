@@ -7,7 +7,7 @@ function Nav(props) {
       <h2 className="col-md-3">
         <a
           onClick={() => setCurrentPage("about")}
-          href="/"
+          href="/#about"
           className="nav-link"
         >
           Marielle Nwana
@@ -22,7 +22,7 @@ function Nav(props) {
               href="#about"
               onClick={() => setCurrentPage("about")}
             >
-              About me
+              About
             </a>
           </li>
           <li className="nav-item ">

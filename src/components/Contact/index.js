@@ -47,27 +47,27 @@ function Contact(props) {
 
   if (pageSelected === "contact") {
     return (
-      <section>
-        <h1>Contact Me</h1>
+      <section className="form-group col-md-6">
+        <h1 className="text-center">Contact Me</h1>
         <form id="contact-form" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
-            <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
+            <input type="text" name="name" defaultValue={name} className="form-control" onBlur={handleChange}/>
           </div>
           <div>
             <label htmlFor="email">Email address:</label>
-            <input type="email" name="email" defaultValue={email} onBlur={handleChange}/>
+            <input type="email" name="email" defaultValue={email} className="form-control" onBlur={handleChange}/>
           </div>
           <div>
             <label htmlFor="message">Message:</label>
-            <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}/>
+            <textarea name="message" rows="5" defaultValue={message} className="form-control" onBlur={handleChange}/>
           </div>
           {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-          <button data-testid='button' type="submit">Submit</button>
+          <button data-testid='button' className="btn btn-primary mt-2" type="submit">Submit</button>
         </form>
       </section>
     );
