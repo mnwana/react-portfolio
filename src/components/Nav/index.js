@@ -3,7 +3,7 @@ import React from "react";
 function Nav(props) {
   const { setCurrentPage } = props;
   return (
-    <section className="row bg-primary p-2">
+    <section className="row bg-primary p-2 border-bottom border-secondary">
       <h2 className="col-md-3">
         <a
           onClick={() => setCurrentPage("about")}

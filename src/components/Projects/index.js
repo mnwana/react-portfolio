@@ -119,7 +119,7 @@ function Projects(props) {
 
   if (pageSelected === "projects") {
     return (
-      <section className="text-center">
+      <section className="text-center mb-4">
         <h1>Projects</h1>
         {/* <Modal showModal={showModal} projectSelected = {projectSelected} toggleModal={toggleModal}></Modal> */}
 

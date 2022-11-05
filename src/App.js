@@ -9,9 +9,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const [pageSelected, setCurrentPage] = useState( 'about');
   return (
-    <div className="flex">
+    <div className="flex mb-2">
       <Nav pageSelected={pageSelected} setCurrentPage={setCurrentPage}></Nav>
-      <main className="container flex-row p-2 align-items-center">
+      <main className="container flex-row p-2 align-items-center h-100">
         <About pageSelected={pageSelected}></About>
         <Contact pageSelected={pageSelected}></Contact>
         <Projects pageSelected={pageSelected}></Projects>

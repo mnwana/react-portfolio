@@ -8,11 +8,11 @@ function Resume(props) {
         <h1>Resume</h1>
         <iframe
           title="Resume"
-          style={{ width: "100%", height: "60%" }}
+          style={{ width: "100%", height: "75%" }}
           src={resumeFile}
         />
-        <button className="button" type="submit">
-          <a href={resumeFile} download="MarielleNwanaResume.PDF">
+        <button className="btn btn-primary text-light" type="submit">
+          <a className=" text-reset  text-decoration-none" href={resumeFile} download="MarielleNwanaResume.PDF">
             Download
           </a>
         </button>
