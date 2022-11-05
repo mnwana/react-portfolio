@@ -7,18 +7,18 @@ function About(props) {
       <section className="col-md-7 align-center mx-auto">
         <h1 className="text-center">About</h1>
         <p className="text-center">
-          Marielle Nwana is and an NYC-based data analyst.
+          I'm Marielle Nwana and I'm an NYC-based data analyst.
           <br></br><br></br>
-          She has a proven understanding of data analytics and engineering tools and
-          passionate about data accessibility and data literacy. Experience
+          I have a proven understanding of data analytics and engineering tools and
+          passion for data accessibility and data literacy. My experience
           includes leading projects within data teams, presenting data driven
-          insights to leadership, and partnering across engineering, business and
+          insights to leadership, and partnering across engineering, client and
           sales teams to transform raw data into data tools and dashboards for
-          internal and external measurement. Marielle thrives in high-growth startup
+          internal and external measurement. I thrive in high-growth startup
           environments where there is a good balance of collboration, autonomy,
           and contiuous learning.
           <br></br><br></br>
-          When she is not working, Marielle enjoys trying out new recipes, playing with her
+          When I'm not working, I enjoy trying out new recipes, playing with my
           cat Molly, and exporing all that the Big Apple has to offer.
         </p>
       </section>

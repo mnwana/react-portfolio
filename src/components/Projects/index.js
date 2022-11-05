@@ -130,11 +130,11 @@ function Projects(props) {
           {/* add 2 featured projects with gif, description and url in card*/}
           {projects.map((project) => (
             <div
-              className="col-md-3 card m-md-2 bg-secondary text-center"
+              className="col-md-3 card m-2 bg-secondary text-center p-0"
               key={project.title}
             >
-              <div className="thumbnail ">
-                <h3 className="card-title bg-primary text-light mx-0 p-0 text-center">
+              <div className="thumbnail">
+                <h3 className="card-title bg-primary text-light mx-0 text-center">
                   {project.title}
                 </h3>
                 <img
@@ -142,7 +142,7 @@ function Projects(props) {
                   src={
                     require(`../../assets/projects/${project.fileName}`).default
                   }
-                  className="img-thumbnail rounded mx-1"
+                  className="img rounded mx-2 p-1 col-md-10"
                   onClick={() => toggleModal(project)}
                 />
                 <p className="card-subtitle">{project.languages}</p>

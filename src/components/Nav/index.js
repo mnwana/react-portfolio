@@ -3,18 +3,18 @@ import React from "react";
 function Nav(props) {
   const { setCurrentPage } = props;
   return (
-    <section className="row bg-primary">
+    <section className="row bg-primary p-2">
       <h2 className="col-md-3">
         <a
           onClick={() => setCurrentPage("about")}
           href="/#about"
           className="nav-link"
         >
-          Marielle Nwana
+          {`> Marielle Nwana`}
         </a>
       </h2>
       <nav className="col-md-9">
-        <ul className="flex-row nav">
+        <ul className="flex-row nav  justify-content-md-end ">
           <li className="nav-item">
             <a
               className="nav-link  text-dark"
@@ -22,7 +22,7 @@ function Nav(props) {
               href="#about"
               onClick={() => setCurrentPage("about")}
             >
-              About
+              {`<About/>`}
             </a>
           </li>
           <li className="nav-item ">
@@ -32,7 +32,7 @@ function Nav(props) {
               href="#projects"
               onClick={() => setCurrentPage("projects")}
             >
-              Projects
+              {`<Projects/>`}
             </a>
           </li>
           <li className="nav-item ">
@@ -42,7 +42,7 @@ function Nav(props) {
               href="#resume"
               onClick={() => setCurrentPage("resume")}
             >
-              Resume
+              {`<Resume/>`}
             </a>
           </li>
           <li className="nav-item ">
@@ -52,7 +52,7 @@ function Nav(props) {
               href="#contact"
               onClick={() => setCurrentPage("contact")}
             >
-              Contact Me
+              {`<Contact Me/>`}
             </a>
           </li>
         </ul>
