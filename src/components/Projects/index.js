@@ -131,13 +131,13 @@ function Projects(props) {
           {/* add 2 featured projects with gif, description and url in card*/}
           {projects.map((project) => (
             <div
-              className="col-md-3 card m-2 bg-secondary text-center p-0"
+              className="col-md-3 card card-resize m-2 bg-secondary text-center p-0"
               key={project.title}
             >
+              <h5 className="card-title bg-primary text-light mx-0 text-center">
+                {project.title}
+              </h5>
               <div className="thumbnail">
-                <h3 className="card-title bg-primary text-light mx-0 text-center">
-                  {project.title}
-                </h3>
                 <img
                   alt={project.title}
                   src={
