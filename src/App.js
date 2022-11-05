@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="flex">
       <Nav pageSelected={pageSelected} setCurrentPage={setCurrentPage}></Nav>
-      <main className="container flex-row  align-items-center">
+      <main className="container flex-row p-2 align-items-center">
         <About pageSelected={pageSelected}></About>
         <Contact pageSelected={pageSelected}></Contact>
         <Projects pageSelected={pageSelected}></Projects>
