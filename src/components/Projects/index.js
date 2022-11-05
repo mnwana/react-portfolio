@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "../Modal";
+import { formatLanguages } from "../../utils/helpers";
 
 function Projects(props) {
   const { pageSelected } = props;
@@ -145,7 +146,9 @@ function Projects(props) {
                   className="img rounded mx-2 p-1 col-md-10"
                   onClick={() => toggleModal(project)}
                 />
-                <p className="card-subtitle">{project.languages}</p>
+                <p className="card-subtitle">
+                  {formatLanguages(project.languages)}
+                </p>
               </div>
             </div>
           ))}

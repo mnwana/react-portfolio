@@ -3,3 +3,7 @@ export function validateEmail(email) {
     return re.test(String(email).toLowerCase());
   }
   
+
+  export function formatLanguages(languages) {
+   return languages.join(" | ") 
+  }

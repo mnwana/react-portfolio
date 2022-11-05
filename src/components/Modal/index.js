@@ -1,5 +1,7 @@
 import React from "react";
 
+import { formatLanguages } from "../../utils/helpers";
+
 function Modal({ projectSelected, onClose }) {
   const {
     title,
@@ -13,7 +15,7 @@ function Modal({ projectSelected, onClose }) {
     <div className="modalBackdrop">
       <div className="modalContainer col-md-6 bg-primary">
         <h3 className="modal-header">{title} </h3>
-        <h4 className="modal-title">{languages}</h4>
+        <h4 className="modal-title">{formatLanguages(languages)}</h4>
         <img
           alt={title}
           src={require(`../../assets/projects/${fileName}`).default}
