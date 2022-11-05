@@ -15,15 +15,22 @@ function Modal({ projectSelected, onClose }) {
     <div className="modalBackdrop">
       <div className="modalContainer col-md-6 bg-primary">
         <h3 className="modal-header">{title} </h3>
-        <h4 className="modal-title">{formatLanguages(languages)}</h4>
         <img
           alt={title}
           src={require(`../../assets/projects/${fileName}`).default}
-          className="img-thumbnail rounded mx-1"
+          className="img-thumbnail rounded mx-auto"
         />
-        <p className="modal-body">{description}</p>
-        <a href={liveDeploy} className="text-dark"> Deployment</a>
-        <a href={repo} className="text-dark"> Repository</a>
+        <h6 className="modal-title mt-2">{formatLanguages(languages)}</h6>
+        <p className="modal-body mt-2">{description}</p>
+        <div className="row justify-content-start">
+          <a href={liveDeploy} className="text-dark col-md-2">
+            Deployment
+          </a>
+          <a href={repo} className="text-dark col-md-2">
+            Repository
+          </a>
+        </div>
+
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" onClick={onClose}>
             Close
