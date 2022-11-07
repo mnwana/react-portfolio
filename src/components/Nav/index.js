@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 function Nav(props) {
   const { pageSelected, setCurrentPage } = props;
@@ -6,10 +6,6 @@ function Nav(props) {
   const resumeActive = pageSelected === 'resume';
   const contactActive = pageSelected === 'contact';
   const projectsActive = pageSelected === 'projects';
-  console.log('about:' + aboutActive);
-  console.log('resume:' + resumeActive);
-  console.log('projects:' + projectsActive);
-  console.log('contact:' + contactActive);
   return (
     <section className="row mnBGPrimary p-2 border-bottom border-secondary mnTextDark">
       <h2 className="col-md-3">
