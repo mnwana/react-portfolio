@@ -9,7 +9,7 @@ function Modal({ projectSelected, onClose }) {
     languages,
     description,
     repo,
-    liveDeploy,
+    deployment,
   } = projectSelected;
   return (
     <div className="modalBackdrop">
@@ -23,16 +23,18 @@ function Modal({ projectSelected, onClose }) {
         <h6 className="modal-title mt-2">{formatLanguages(languages)}</h6>
         <p className="modal-body mt-2">{description}</p>
         <div className="row justify-content-start">
-          <a href={liveDeploy} className="mnTextDark col-md-2">
-            Deployment
-          </a>
+          {deployment && (
+            <a href={deployment} className="mnTextDark col-md-2">
+              Deployment
+            </a>
+          )}
           <a href={repo} className="mnTextDark col-md-2">
             Repository
           </a>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" onClick={onClose}>
+          <button type="button" className="btn btn-secondary" onClick={onClose}>
             Close
           </button>
         </div>

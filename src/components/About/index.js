@@ -4,10 +4,19 @@ function About(props) {
   const { pageSelected } = props;
   if (pageSelected === "about") {
     return (
-      <section className="col-md-7 align-center mx-auto">
+      <section className="col-sm-10 col-md-8 align-center mx-auto">
         <h1 className="text-center">About</h1>
+        <div className="row flex-row">
+        <img
+                  alt="Marielle Nwana"
+                  src={
+                    require(`../../assets/self-photo.jpeg`).default
+                  }
+                  id="self-photo"
+                  className="img mnBorderPrimary border rounded center col-md-6 p-0"
+                />
         {/* change about me to be a code style block */}
-        <div className="text-center border mnBorderPrimary mnBGLight rounded p-2">
+        <div className="text-center border w-s-100 mnBorderPrimary mnBGLight rounded p-2 col-md-6">
           <p> I'm Marielle Nwana and I'm an NYC-based Data Analyst.</p>
           <p>
             I have a proven understanding of data analytics and engineering
@@ -23,6 +32,7 @@ function About(props) {
             When I'm not working, I enjoy trying out new recipes, playing with
             my cat Molly, and exporing all that the Big Apple has to offer.
           </p>
+        </div>
         </div>
       </section>
     );

@@ -7,7 +7,7 @@ import Nav from "./components/Nav";
 import Resume from "./components/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
-  const [pageSelected, setCurrentPage] = useState( 'projects');
+  const [pageSelected, setCurrentPage] = useState( 'about');
   return (
     <div className="flex mb-2">
       <Nav pageSelected={pageSelected} setCurrentPage={setCurrentPage}></Nav>
