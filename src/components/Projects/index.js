@@ -121,7 +121,7 @@ function Projects(props) {
   if (pageSelected === "projects") {
     return (
       <section className="text-center mb-4">
-        <h1>Projects</h1>
+        <h1 className="mnTextSecondary">Projects</h1>
         {/* <Modal showModal={showModal} projectSelected = {projectSelected} toggleModal={toggleModal}></Modal> */}
 
         {showModal && (
@@ -131,10 +131,10 @@ function Projects(props) {
           {/* add 2 featured projects with gif, description and url in card*/}
           {projects.map((project) => (
             <div
-              className="col-md-3 card card-resize m-2 bg-secondary text-center p-0"
+              className="col-md-3 card card-resize m-2  text-center p-0"
               key={project.title}
             >
-              <h5 className="card-title bg-primary text-light mx-0 text-center">
+              <h5 className="card-title mnBGDark mnBorderDark rounded-top mnTextLight mx-0 text-center">
                 {project.title}
               </h5>
               <div className="thumbnail">
@@ -146,9 +146,9 @@ function Projects(props) {
                   className="img rounded mx-2 p-1 col-md-10"
                   onClick={() => toggleModal(project)}
                 />
-                <p className="card-subtitle">
+                {/* <p className="card-subtitle">
                   {formatLanguages(project.languages)}
-                </p>
+                </p> */}
               </div>
             </div>
           ))}

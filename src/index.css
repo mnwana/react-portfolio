@@ -61,3 +61,56 @@ code {
   font-weight: 600;
   margin-bottom: 25px;
 }
+
+.mnBGPrimary {
+  background-color: #CBC0D3;
+}
+
+.mnBGSecondary {
+  background-color: #DFA5AE;
+}
+
+.mnBGDark {
+  background-color: #333A48;
+}
+
+.mnBGLight {
+  background-color: #F3F4F7;
+}
+
+.mnTextPrimary {
+ color: #CBC0D3;
+}
+
+.mnTextSecondary {
+  color: #DFA5AE;
+}
+
+.mnTextDark {
+  color: #333A48;
+}
+
+.mnTextLight {
+  color: #FFEDF1;
+}
+
+
+.mnBorderPrimary {
+  border-color: #CBC0D3;
+ }
+ 
+ .mnBorderSecondary {
+  border-color: #DFA5AE;
+ }
+ 
+ .mnBorderDark {
+  border-color: #333A48;
+ }
+ 
+ .mnBorderLight {
+   border-color: #FFEDF1;
+ }
+
+ .mnButtonPrimary{
+  background-color: #CBC0D3 !important;
+ }

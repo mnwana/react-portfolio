@@ -11,8 +11,8 @@ function Resume(props) {
           style={{ width: "100%", height: "75%" }}
           src={resumeFile}
         />
-        <button className="btn btn-primary text-light" type="submit">
-          <a className=" text-reset  text-decoration-none" href={resumeFile} download="MarielleNwanaResume.PDF">
+        <button className="btn mnButtonPrimary " type="submit">
+          <a className=" text-reset text-decoration-none" href={resumeFile} download="MarielleNwanaResume.PDF">
             Download
           </a>
         </button>

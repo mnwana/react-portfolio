@@ -67,7 +67,7 @@ function Contact(props) {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-          <button data-testid='button' className="btn btn-primary mt-2" type="submit">Submit</button>
+          <button data-testid='button' className="btn mnButtonPrimary mt-2" type="submit">Submit</button>
         </form>
       </section>
     );

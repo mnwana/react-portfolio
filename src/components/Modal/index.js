@@ -13,7 +13,7 @@ function Modal({ projectSelected, onClose }) {
   } = projectSelected;
   return (
     <div className="modalBackdrop">
-      <div className="modalContainer col-md-6 bg-primary">
+      <div className="modalContainer col-md-6 mnBGPrimary">
         <h3 className="modal-header">{title} </h3>
         <img
           alt={title}
@@ -23,10 +23,10 @@ function Modal({ projectSelected, onClose }) {
         <h6 className="modal-title mt-2">{formatLanguages(languages)}</h6>
         <p className="modal-body mt-2">{description}</p>
         <div className="row justify-content-start">
-          <a href={liveDeploy} className="text-dark col-md-2">
+          <a href={liveDeploy} className="mnTextDark col-md-2">
             Deployment
           </a>
-          <a href={repo} className="text-dark col-md-2">
+          <a href={repo} className="mnTextDark col-md-2">
             Repository
           </a>
         </div>
