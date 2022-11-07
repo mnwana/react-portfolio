@@ -6,7 +6,7 @@ function Projects(props) {
   const { pageSelected } = props;
   const [projectSelected, setProjectSelected] = useState({});
   const [showModal, setShowModal] = useState(false);
-  const [projects] = useState([
+  const [projectsFull] = useState([
     {
       title: "Astrosounds",
       fileName: "astrosounds.png",
@@ -106,6 +106,82 @@ function Projects(props) {
     {
       title: "Weather Dashboard",
       fileName: "weather-dashboard.png",
+      languages: ["Javascript", "CSS"],
+      description: "testing",
+      repo: "github.com",
+      liveDeploy: "github.com",
+    },
+  ]);
+
+  const [projects] = useState([
+    {
+      title: "Astrosounds",
+      fileName: "astrosounds.png",
+      languages: ["Javascript", "CSS"],
+      description: "testing",
+      repo: "github.com",
+      liveDeploy: "github.com",
+    },
+    {
+      title: "Weather Dashboard",
+      fileName: "weather-dashboard.png",
+      languages: ["Javascript", "CSS"],
+      description: "testing",
+      repo: "github.com",
+      liveDeploy: "github.com",
+    },
+    {
+      title: "My Medication List",
+      fileName: "my-med-list.png",
+      languages: ["Javascript", "CSS"],
+      description: "testing",
+      repo: "github.com",
+      liveDeploy: "github.com",
+    },
+    {
+      title: "Ecommerce Backend",
+      fileName: "ecomm-backend.png",
+      languages: ["Javascript", "CSS"],
+      description: "testing",
+      repo: "github.com",
+      liveDeploy: "github.com",
+    },
+    {
+      title: "Employee Tracker",
+      fileName: "employee_tracker.png",
+      languages: ["Javascript", "CSS"],
+      description: "testing",
+      repo: "github.com",
+      liveDeploy: "github.com",
+    },
+    {
+      title: "Javascript Quiz",
+      fileName: "javascript_quiz.png",
+      languages: ["Javascript", "CSS"],
+      description: "testing",
+      repo: "github.com",
+      liveDeploy: "github.com",
+    },
+
+    {
+      title: "Quick Notes",
+      fileName: "quick-notes.png",
+      languages: ["Javascript", "CSS"],
+      description: "testing",
+      repo: "github.com",
+      liveDeploy: "github.com",
+    },
+    {
+      title: "Readme Generator",
+      fileName: "readme-generator.png",
+      languages: ["Javascript", "CSS"],
+      description: "testing",
+      repo: "github.com",
+      liveDeploy: "github.com",
+    },
+    {
+      title: "Social Network Backend",
+      fileName: "social-network-backend.png",
       languages: ["Javascript", "CSS"],
       description: "testing",
       repo: "github.com",

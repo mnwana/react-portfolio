@@ -7,7 +7,7 @@ function About(props) {
       <section className="col-md-7 align-center mx-auto">
         <h1 className="text-center">About</h1>
         {/* change about me to be a code style block */}
-        <div className="text-center border mnBorderPrimary rounded p-2">
+        <div className="text-center border mnBorderPrimary mnBGLight rounded p-2">
           <p> I'm Marielle Nwana and I'm an NYC-based Data Analyst.</p>
           <p>
             I have a proven understanding of data analytics and engineering
