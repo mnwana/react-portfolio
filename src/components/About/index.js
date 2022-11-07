@@ -10,7 +10,7 @@ function About(props) {
         <img
                   alt="Marielle Nwana"
                   src={
-                    require(`../../assets/self-photo.jpeg`).default
+                    require(`../../assets/images/self-photo.jpeg`).default
                   }
                   id="self-photo"
                   className="img mnBorderPrimary border rounded center col-md-6 p-0"
