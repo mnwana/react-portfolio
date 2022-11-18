@@ -114,6 +114,24 @@ function Projects(props) {
 
   const [projects] = useState([
     {
+      title: "Paw Shop",
+      fileName: "paw-shop.png",
+      languages: [
+        "React",
+        "GraphQL",
+        "MongoDB and Mongoose ODM",
+        "Bootstrap",
+        "CSS",
+        "JWT",
+        "Luxon",
+        "Git",
+      ],
+      description:
+        "This application allows NYC residents to exchange pet products they no longer need.",
+      repo: "https://github.com/mnwana/paw-shop/tree/main",
+      deployment: "https://pawshop.herokuapp.com/",
+    },
+    {
       title: "Astrosounds",
       fileName: "astrosounds.png",
       languages: [
@@ -125,7 +143,7 @@ function Projects(props) {
         "Spotify Scraper API",
       ],
       description:
-        "This applications provides Spotify playlist recommendations based on the user's daily horoscope.      ",
+        "This applications provides Spotify playlist recommendations based on the user's daily horoscope.",
       repo: "https://www.github.com/noah35becker/astrosounds",
       deployment: "https://noah35becker.github.io/astrosounds/",
     },
@@ -167,7 +185,8 @@ function Projects(props) {
       title: "Ecommerce Backend",
       fileName: "ecomm-backend.png",
       languages: ["Javascript", "Express", "Handlebars", "MySQL"],
-      description: "This is a backened application for an online ecommerce site that provides products that have associated categories and tags. The provided API allows a user to interact with the database, reading and writing data.",
+      description:
+        "This is a backened application for an online ecommerce site that provides products that have associated categories and tags. The provided API allows a user to interact with the database, reading and writing data.",
       repo: "https://github.com/mnwana/ecomm-site",
     },
     {
@@ -181,32 +200,25 @@ function Projects(props) {
     {
       title: "Javascript Quiz",
       fileName: "javascript_quiz.png",
-      languages: ["Javascript", "HTML","CSS"],
+      languages: ["Javascript", "HTML", "CSS"],
       description: "A quiz tool for studying Javascript concepts.",
       repo: "https://github.com/mnwana/code-quiz",
       deployment: "https://mnwana.github.io/code-quiz/",
-    },
-
-    {
-      title: "Quick Notes",
-      fileName: "quick-notes.png",
-      languages: ["Javascript", "HTML","CSS", "Express"],
-      description: "A web hosted application that stores notes.",
-      repo: "https://github.com/mnwana/note-taker",
-      deployment: "https://note-taker-mnw.herokuapp.com/notes",
     },
     {
       title: "Readme Generator",
       fileName: "readme-generator.png",
       languages: ["Javascript", "MySQL", "Inquirer"],
-      description: "A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package",
+      description:
+        "A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package",
       repo: "https://github.com/mnwana/readme-generator",
     },
     {
       title: "Social Network Backend",
       fileName: "social-network-backend.png",
       languages: ["Javascript", "MongoDB", "Express"],
-      description: "This is a backened application for an online social network site that users to sign up for an account, post their thoughts, add friends, and react to other's posts. The provided API allows a user to interact with the MongoDB database, reading and writing data.",
+      description:
+        "This is a backened application for an online social network site that users to sign up for an account, post their thoughts, add friends, and react to other's posts. The provided API allows a user to interact with the MongoDB database, reading and writing data.",
       repo: "https://github.com/mnwana/social-network",
     },
   ]);
