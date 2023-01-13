@@ -1,5 +1,9 @@
 import React from "react";
+<<<<<<< HEAD
 import { handleNavClick } from "./utils/gtm_events";
+=======
+import {navClickEvent} from '../../utils/ga4';
+>>>>>>> 0aa9a635847ee75507076c02c5f88d02f2849c4a
 
 function Nav(props) {
   const { pageSelected, setCurrentPage } = props;
@@ -18,7 +22,7 @@ function Nav(props) {
           {`> Marielle Nwana`}
         </a>
       </h2>
-      <nav className="col-md-9 ">
+      <nav className="col-md-9 " onClick={navClickEvent(pageSelected)}>
         <ul className="flex-row nav mnBGPrimary  justify-content-md-end">
           <li className="nav-item p-2">
             <a
