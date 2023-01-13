@@ -19,7 +19,7 @@ function App() {
 
   const [pageSelected, setCurrentPage] = useState("about");
   return (
-    <GTMProvider state={gtmParams}>
+    // <GTMProvider state={gtmParams}>
       <div className="flex mb-2">
         <Nav pageSelected={pageSelected} setCurrentPage={setCurrentPage}></Nav>
         <main className="container flex-row p-2 align-items-center h-100">
@@ -30,7 +30,7 @@ function App() {
         </main>
         <Footer></Footer>
       </div>
-    </GTMProvider>
+    // </GTMProvider>
   );
 }
 
