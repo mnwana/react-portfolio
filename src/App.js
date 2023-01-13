@@ -5,7 +5,8 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Nav from "./components/Nav";
 import Resume from "./components/Resume";
-import { GTMProvider } from "@elgorditosalsero/react-gtm-hook";
+import { GTMProvider } from '@elgorditosalsero/react-gtm-hook';
+
 // import TagManager from 'react-gtm-module'
 
 import "bootstrap/dist/css/bootstrap.min.css";

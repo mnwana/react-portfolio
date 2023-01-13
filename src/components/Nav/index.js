@@ -1,11 +1,12 @@
 import React from "react";
+import { handleNavClick } from "./utils/gtm_events";
 
 function Nav(props) {
   const { pageSelected, setCurrentPage } = props;
-  const aboutActive = pageSelected === 'about';
-  const resumeActive = pageSelected === 'resume';
-  const contactActive = pageSelected === 'contact';
-  const projectsActive = pageSelected === 'projects';
+  const aboutActive = pageSelected === "about";
+  const resumeActive = pageSelected === "resume";
+  const contactActive = pageSelected === "contact";
+  const projectsActive = pageSelected === "projects";
   return (
     <section className="row mnBGPrimary p-2 border-bottom border-secondary mnTextDark">
       <h2 className="col-md-3">
@@ -21,7 +22,10 @@ function Nav(props) {
         <ul className="flex-row nav mnBGPrimary  justify-content-md-end">
           <li className="nav-item p-2">
             <a
-            className={"text-decoration-none mnTextDark " + (aboutActive ? 'nav-active' : '')}
+              className={
+                "text-decoration-none mnTextDark " +
+                (aboutActive ? "nav-active" : "")
+              }
               data-testid="about"
               href="#about"
               onClick={() => setCurrentPage("about")}
@@ -31,18 +35,27 @@ function Nav(props) {
           </li>
           <li className="nav-item p-2">
             <a
-            className={"text-decoration-none mnTextDark " + (projectsActive ? 'nav-active' : '')}
-            data-testid="projects"
+              className={
+                "text-decoration-none mnTextDark " +
+                (projectsActive ? "nav-active" : "")
+              }
+              data-testid="projects"
               href="#projects"
-              onClick={() => setCurrentPage("projects")}
+              onClick={() => {
+                setCurrentPage("projects");
+                handleNavClick("projects");
+              }}
             >
               {`<Projects/>`}
             </a>
           </li>
           <li className="nav-item p-2">
             <a
-            className={"text-decoration-none mnTextDark " + (resumeActive ? 'nav-active' : '')}
-            data-testid="resume"
+              className={
+                "text-decoration-none mnTextDark " +
+                (resumeActive ? "nav-active" : "")
+              }
+              data-testid="resume"
               href="#resume"
               onClick={() => setCurrentPage("resume")}
             >
@@ -51,8 +64,11 @@ function Nav(props) {
           </li>
           <li className="nav-item p-2">
             <a
-            className={"text-decoration-none mnTextDark " + (contactActive ? 'nav-active' : '')}
-            data-testid="contact"
+              className={
+                "text-decoration-none mnTextDark " +
+                (contactActive ? "nav-active" : "")
+              }
+              data-testid="contact"
               href="#contact"
               onClick={() => setCurrentPage("contact")}
             >
