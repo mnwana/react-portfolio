@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-import { handleNavClick } from "./utils/gtm_events";
-=======
 import {navClickEvent} from '../../utils/ga4';
->>>>>>> 0aa9a635847ee75507076c02c5f88d02f2849c4a
 
 function Nav(props) {
   const { pageSelected, setCurrentPage } = props;
@@ -45,10 +41,8 @@ function Nav(props) {
               }
               data-testid="projects"
               href="#projects"
-              onClick={() => {
-                setCurrentPage("projects");
-                handleNavClick("projects");
-              }}
+              onClick={() => setCurrentPage("projects")}
+
             >
               {`<Projects/>`}
             </a>
