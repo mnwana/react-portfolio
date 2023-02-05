@@ -1,9 +1,13 @@
 import React from "react";
+import { footerClickEvent } from "../../utils/ga4";
 
 function Footer() {
   return (
     <footer className="mt-4 justify-content-center mnBGSecondary footer fixed-bottom border-top mnBorderPrimary">
-      <ul className="row justify-content-center text-center p-0 my-2">
+      <ul
+        className="row justify-content-center text-center p-0 my-2"
+        onClick={() => footerClickEvent()}
+      >
         <li className=" col-md-2 list-group-item">
           <a href="mailto:mariellenwana@gmail.com" className="mnTextDark">
             {" "}

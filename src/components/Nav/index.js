@@ -18,7 +18,7 @@ function Nav(props) {
           {`> Marielle Nwana`}
         </a>
       </h2>
-      <nav className="col-md-9 " onClick={navClickEvent(pageSelected)}>
+      <nav className="col-md-9 " onClick={() => navClickEvent(pageSelected)}>
         <ul className="flex-row nav mnBGPrimary  justify-content-md-end">
           <li className="nav-item p-2">
             <a
