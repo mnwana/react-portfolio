@@ -60,7 +60,7 @@ function Nav(props) {
               {`<Resume/>`}
             </a>
           </li>
-          <li className="nav-item p-2">
+          {/* <li className="nav-item p-2">
             <a
               className={
                 "text-decoration-none mnTextDark " +
@@ -72,7 +72,7 @@ function Nav(props) {
             >
               {`<Contact Me/>`}
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </section>

@@ -5,7 +5,7 @@ function About(props) {
   if (pageSelected === "about") {
     return (
       <section className="col-sm-10 col-md-8 align-center mx-auto">
-        <h1 className="text-center">About</h1>
+        <h1 className="text-center mnTextSecondary">About</h1>
         <div className="row flex-row">
         <img
                   alt="Marielle Nwana"
