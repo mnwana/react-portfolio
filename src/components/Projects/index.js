@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "../Modal";
+import {projectOpenClickEvent} from '../../utils/ga4';
 
 function Projects(props) {
   const { pageSelected } = props;
@@ -254,7 +255,7 @@ function Projects(props) {
                     require(`../../assets/projects/${project.fileName}`).default
                   }
                   className="img rounded mx-2 p-1 col-md-10"
-                  onClick={() => toggleModal(project)}
+                  onClick={() => {toggleModal(project); projectOpenClickEvent(project.title)}}
                 />
                 {/* <p className="card-subtitle">
                   {formatLanguages(project.languages)}
