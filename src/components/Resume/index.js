@@ -7,8 +7,7 @@ function Resume(props) {
       <section className="col-md-6 text-center vh-100 mx-auto justify-content-center">
         <h1 className="mnTextSecondary">Resume</h1>
         <h5>Proficiencies</h5>
-        <p className="mnTextDark"> {`JavaScript ES6+ | CSS3 | HTML5 | SQL | NoSQL | Express | React | Node |
-Handlebars | jQuery | Bootstrap | Airflow | Snowflake | dbt`} </p>
+        <p className="mnTextDark"> {`dbt | BigQuery | Airflow | Snowflake | SQL | NoSQL | MySQL | Fivetran | Python | Javascript`} </p>
         <iframe
           title="Resume"
           style={{ width: "100%" , height: "75%" }}
