@@ -15,7 +15,7 @@ function Nav(props) {
           href="/#about"
           className="nav-link"
         >
-          {`> Marielle Nwana`}
+          {`Marielle Nwana`}
         </a>
       </h2>
       <nav className="col-md-9 " onClick={() => navClickEvent(pageSelected)}>
@@ -30,7 +30,7 @@ function Nav(props) {
               href="#about"
               onClick={() => setCurrentPage("about")}
             >
-              {`<About/>`}
+              {`About`}
             </a>
           </li>
           <li className="nav-item p-2">
@@ -44,7 +44,7 @@ function Nav(props) {
               onClick={() => setCurrentPage("projects")}
 
             >
-              {`<Projects/>`}
+              {`Projects`}
             </a>
           </li>
           <li className="nav-item p-2">
@@ -57,7 +57,7 @@ function Nav(props) {
               href="#resume"
               onClick={() => setCurrentPage("resume")}
             >
-              {`<Resume/>`}
+              {`Resume`}
             </a>
           </li>
           {/* <li className="nav-item p-2">

@@ -22,19 +22,19 @@ code {
   /* width: auto; */
   /* height: 300px; */
   /* margin-bottom: 50px; */
-  max-width: 75%;
-  cursor: pointer;
+  /* max-width: 75%; */
+  /* cursor: pointer; */
 }
 
 .modalBackdrop {
-  background: rgba(0, 0, 0, 0.65);
+  /* background: rgba(0, 0, 0, 0.65);
   bottom: 0;
   left: 0;
   overflow: auto;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 1; */
 }
 
 /* .modal {
@@ -48,86 +48,86 @@ code {
 } */
 
 .modalContainer {
-  background: var(--darker);
+  /* background: var(--darker);
   border-radius: 5px;
   max-width: 100%;
   margin: 50px auto;
   padding: 15px;
-  width: 960px;
+  width: 960px; */
 }
 
 .modalTitle {
-  font-size: 18px;
+  /* font-size: 18px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 25px; */
 }
 
 .mnBGPrimary {
-  background-color: #CBC0D3;
+  /* background-color: #CBC0D3; */
 }
 
 .mnBGSecondary {
-  background-color: #DFA5AE;
+  /* background-color: #DFA5AE; */
 }
 
 .mnBGDark {
-  background-color: #333A48;
+  /* background-color: #333A48; */
 }
 
 .mnBGLight {
-  background-color: #F3F4F7;
+  /* background-color: #F3F4F7; */
 }
 
 .mnTextPrimary {
- color: #CBC0D3;
+ /* color: #CBC0D3; */
 }
 
 .mnTextSecondary {
-  color: #DFA5AE;
+  /* color: #DFA5AE; */
 }
 
 .mnTextDark {
-  color: #333A48;
+  /* color: #333A48; */
 }
 
 .mnTextLight {
-  color: #FFEDF1;
+  /* color: #FFEDF1; */
 }
 
 
 .mnBorderPrimary {
-  border-color: #CBC0D3;
+  /* border-color: #CBC0D3; */
  }
  
  .mnBorderSecondary {
-  border-color: #DFA5AE;
+  /* border-color: #DFA5AE; */
  }
  
  .mnBorderDark {
-  border-color: #333A48;
+  /* border-color: #333A48; */
  }
  
  .mnBorderLight {
-   border-color: #FFEDF1;
+   /* border-color: #FFEDF1; */
  }
 
  .mnButtonPrimary{
-  background-color: #CBC0D3 !important;
+  /* background-color: #CBC0D3 !important; */
  }
 
  .center {
-  display: block;
+  /* display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 50%; */
 }
 #self-photo {
-  max-height: 400px;
-  width: auto;
+  /* max-height: 400px;
+  width: auto; */
 }
 
 .nav-active {
-  font-weight: bold;
+  /* font-weight: bold;
   outline-color: #FFEDF1;
-  color: #333A48
+  color: #333A48 */
 }
