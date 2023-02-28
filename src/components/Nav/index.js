@@ -1,82 +1,54 @@
 import React from "react";
-import {navClickEvent} from '../../utils/ga4';
+import { navClickEvent } from "../../utils/ga4";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
-function Nav(props) {
+function NavComponent(props) {
   const { pageSelected, setCurrentPage } = props;
-  const aboutActive = pageSelected === "about";
-  const resumeActive = pageSelected === "resume";
-  const contactActive = pageSelected === "contact";
-  const projectsActive = pageSelected === "projects";
   return (
-    <section className="row mnBGPrimary p-2 border-bottom border-secondary mnTextDark">
-      <h2 className="col-md-3">
-        <a
-          onClick={() => setCurrentPage("about")}
-          href="/#about"
-          className="nav-link"
-        >
-          {`Marielle Nwana`}
-        </a>
-      </h2>
-      <nav className="col-md-9 " onClick={() => navClickEvent(pageSelected)}>
-        <ul className="flex-row nav mnBGPrimary  justify-content-md-end">
-          <li className="nav-item p-2">
-            <a
-              className={
-                "text-decoration-none mnTextDark " +
-                (aboutActive ? "nav-active" : "")
-              }
-              data-testid="about"
+    <Navbar bg="light" expand="lg" onClick={() => navClickEvent(pageSelected)}>
+      <Container>
+        <Navbar.Brand href="/#about" onClick={() => setCurrentPage("about")}>
+          Marielle Nwana
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link
               href="#about"
+              data-testid="about"
               onClick={() => setCurrentPage("about")}
             >
-              {`About`}
-            </a>
-          </li>
-          <li className="nav-item p-2">
-            <a
-              className={
-                "text-decoration-none mnTextDark " +
-                (projectsActive ? "nav-active" : "")
-              }
-              data-testid="projects"
+              About
+            </Nav.Link>
+            <Nav.Link
               href="#projects"
+              data-testid="projects"
               onClick={() => setCurrentPage("projects")}
-
             >
-              {`Projects`}
-            </a>
-          </li>
-          <li className="nav-item p-2">
-            <a
-              className={
-                "text-decoration-none mnTextDark " +
-                (resumeActive ? "nav-active" : "")
-              }
-              data-testid="resume"
+              Projects
+            </Nav.Link>
+            <Nav.Link
               href="#resume"
+              data-testid="resume"
               onClick={() => setCurrentPage("resume")}
             >
-              {`Resume`}
-            </a>
-          </li>
-          {/* <li className="nav-item p-2">
-            <a
-              className={
-                "text-decoration-none mnTextDark " +
-                (contactActive ? "nav-active" : "")
-              }
-              data-testid="contact"
+              Resume
+            </Nav.Link>
+            <Nav.Link
               href="#contact"
+              data-testid="contact"
               onClick={() => setCurrentPage("contact")}
             >
-              {`<Contact Me/>`}
-            </a>
-          </li> */}
-        </ul>
-      </nav>
-    </section>
+              Contact Me
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Nav;
+export default NavComponent;
