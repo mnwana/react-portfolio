@@ -4,6 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
+// fix href and links to save location
+
 function NavComponent(props) {
   const { pageSelected, setCurrentPage } = props;
   return (

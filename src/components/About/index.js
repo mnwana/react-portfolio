@@ -11,7 +11,7 @@ function About(props) {
       <section className="align-center mx-auto">
         <h1 className="text-center mnTextSecondary">About</h1>
         <Row className="d-flex justify-content-center">
-          <Col xs={6} md={4}>
+          <Col xs={11} md={4}>
             <Image
               alt="Marielle Nwana"
               src={require(`../../assets/images/self-photo.jpeg`).default}
@@ -20,7 +20,7 @@ function About(props) {
               fluid
             />
           </Col>
-          <Col xs={6} md={5}>
+          <Col xs={11} md={5} className="text-center mt-2">
             <p> I'm Marielle Nwana and I'm an NYC-based Data Analyst.</p>
             <p>
               I have a proven understanding of data analytics and engineering

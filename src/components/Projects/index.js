@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "../Modal";
+import ModalComponent from "../Modal";
 import {projectOpenClickEvent} from '../../utils/ga4';
 
 function Projects(props) {
@@ -233,10 +233,11 @@ function Projects(props) {
     return (
       <section className="text-center mb-4">
         <h1 className="mnTextSecondary">Projects</h1>
-        {/* <Modal showModal={showModal} projectSelected = {projectSelected} toggleModal={toggleModal}></Modal> */}
-
         {showModal && (
-          <Modal onClose={toggleModal} projectSelected={projectSelected} />
+          <ModalComponent 
+          onClose={toggleModal} 
+          projectSelected={projectSelected} 
+          show = {showModal}/>
         )}
         <div className="row mx-auto justify-content-center">
           {/* add 2 featured projects with gif, description and url in card*/}
@@ -255,7 +256,8 @@ function Projects(props) {
                     require(`../../assets/projects/${project.fileName}`).default
                   }
                   className="img rounded mx-2 p-1 col-md-10"
-                  onClick={() => {toggleModal(project); projectOpenClickEvent(project.title)}}
+                  onClick={() => {toggleModal(project); 
+                    projectOpenClickEvent(project.title)}}
                 />
                 {/* <p className="card-subtitle">
                   {formatLanguages(project.languages)}

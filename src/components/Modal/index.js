@@ -1,8 +1,11 @@
 import React from "react";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
 
 import { formatLanguages } from "../../utils/helpers";
 
-function Modal({ projectSelected, onClose }) {
+function ModalComponent({ projectSelected, onClose, show }) {
   const {
     title,
     fileName,
@@ -12,35 +15,28 @@ function Modal({ projectSelected, onClose }) {
     deployment,
   } = projectSelected;
   return (
-    <div className="modalBackdrop">
-      <div className="modalContainer col-md-6 mnBGPrimary">
-        <h3 className="modal-header">{title} </h3>
-        <img
-          alt={title}
-          src={require(`../../assets/projects/${fileName}`).default}
-          className="img-thumbnail rounded mx-auto"
-        />
-        <h6 className="modal-title mt-2">{formatLanguages(languages)}</h6>
-        <p className="modal-body mt-2">{description}</p>
-        <div className="row justify-content-start">
-          {deployment && (
-            <a href={deployment} className="mnTextDark col-md-2">
-              Deployment
-            </a>
-          )}
-          <a href={repo} className="mnTextDark col-md-2">
-            Repository
-          </a>
+    <Modal show={show} onHide={onClose} centered>
+      <Modal.Header closeButton>
+        <Modal.Title>{title}</Modal.Title>
+      </Modal.Header>
+      <Image
+        alt={title}
+        src={require(`../../assets/projects/${fileName}`).default}
+        className="img-thumbnail rounded mx-auto"
+      />
+      <Modal.Body className="text-center">
+        <p>{description}</p>
+        <p>{formatLanguages(languages)}</p>
+      </Modal.Body>
+      <Modal.Footer className="d-flex justify-content-around">
+        <div>
+          {/* open links in new tabs */}
+          {deployment && <a href={deployment} className="mx-2">Deployment</a>}
+          <a href={repo} className="mx-2">Repository</a>
         </div>
-
-        <div class="modal-footer">
-          <button type="button" className="btn btn-secondary" onClick={onClose}>
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
+      </Modal.Footer>
+    </Modal>
   );
 }
 
-export default Modal;
+export default ModalComponent;
