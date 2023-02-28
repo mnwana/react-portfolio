@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ModalComponent from "../Modal";
-import {projectOpenClickEvent} from '../../utils/ga4';
+import Card from "react-bootstrap/Card";
+import Image from "react-bootstrap/Image";
+import { projectOpenClickEvent } from "../../utils/ga4";
 
 function Projects(props) {
   const { pageSelected } = props;
@@ -232,38 +234,34 @@ function Projects(props) {
   if (pageSelected === "projects") {
     return (
       <section className="text-center mb-4">
-        <h1 className="mnTextSecondary">Projects</h1>
+        <h1>Projects</h1>
         {showModal && (
-          <ModalComponent 
-          onClose={toggleModal} 
-          projectSelected={projectSelected} 
-          show = {showModal}/>
+          <ModalComponent
+            onClose={toggleModal}
+            projectSelected={projectSelected}
+            show={showModal}
+          />
         )}
         <div className="row mx-auto justify-content-center">
           {/* add 2 featured projects with gif, description and url in card*/}
           {projects.map((project) => (
-            <div
-              className="col-md-3 card card-resize m-2  text-center p-0"
+            <Card
+              style={{ width: "24rem" }}
               key={project.title}
+              className="m-2"
             >
-              <h5 className="card-title mnBGDark mnBorderDark rounded-top mnTextLight mx-0 text-center">
-                {project.title}
-              </h5>
-              <div className="thumbnail">
-                <img
-                  alt={project.title}
-                  src={
-                    require(`../../assets/projects/${project.fileName}`).default
-                  }
-                  className="img rounded mx-2 p-1 col-md-10"
-                  onClick={() => {toggleModal(project); 
-                    projectOpenClickEvent(project.title)}}
-                />
-                {/* <p className="card-subtitle">
-                  {formatLanguages(project.languages)}
-                </p> */}
-              </div>
-            </div>
+              <Card.Title>{project.title}</Card.Title>
+              <Card.Img
+                alt={project.title}
+                src={
+                  require(`../../assets/projects/${project.fileName}`).default
+                }
+                onClick={() => {
+                  toggleModal(project);
+                  projectOpenClickEvent(project.title);
+                }}
+              />
+            </Card>
           ))}
         </div>
       </section>

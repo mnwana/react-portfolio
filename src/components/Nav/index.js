@@ -38,13 +38,6 @@ function NavComponent(props) {
             >
               Resume
             </Nav.Link>
-            <Nav.Link
-              href="#contact"
-              data-testid="contact"
-              onClick={() => setCurrentPage("contact")}
-            >
-              Contact Me
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
