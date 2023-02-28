@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import About from "./components/About";
-import Footer from "./components/Footer";
+import FooterComponent from "./components/Footer";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import NavComponent from "./components/Nav";
 import Resume from "./components/Resume";
 import TagManager from "react-gtm-module";
-
 import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   const tagManagerArgs = {
     gtmId: "GTM-N6QXHVV",
@@ -24,7 +24,7 @@ function App() {
         <Projects pageSelected={pageSelected}></Projects>
         <Resume pageSelected={pageSelected}></Resume>
       </main>
-      <Footer></Footer>
+      <FooterComponent></FooterComponent>
     </div>
   );
 }
