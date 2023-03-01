@@ -1,6 +1,5 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 
 import { formatLanguages } from "../../utils/helpers";
@@ -26,7 +25,7 @@ function ModalComponent({ projectSelected, onClose, show }) {
       />
       <Modal.Body className="text-center">
         <p>{description}</p>
-        <p>{formatLanguages(languages)}</p>
+        <h6>{formatLanguages(languages)}</h6>
       </Modal.Body>
       <Modal.Footer className="d-flex justify-content-around">
         <div>

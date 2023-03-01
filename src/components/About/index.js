@@ -8,7 +8,7 @@ function About(props) {
   const { pageSelected } = props;
   if (pageSelected === "about") {
     return (
-      <section className="align-center mx-auto">
+      <Container className="align-center mx-auto">
         <h1 className="text-center mnTextSecondary">About</h1>
         <Row className="d-flex justify-content-center">
           <Col xs={11} md={4}>
@@ -39,7 +39,7 @@ function About(props) {
             </p>
           </Col>
         </Row>
-      </section>
+      </Container>
     );
   }
   return;
