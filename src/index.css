@@ -28,3 +28,9 @@ code {
 }
 
 
+.aboutBox{
+  min-height: 550px;
+}
+.aboutImg{
+  max-height: 550px;
+}

@@ -14,7 +14,7 @@ function App() {
   };
   TagManager.initialize(tagManagerArgs);
 
-  const [pageSelected, setCurrentPage] = useState("resume");
+  const [pageSelected, setCurrentPage] = useState("about");
   return (
     <div className="flex mb-2">
       <NavComponent pageSelected={pageSelected} setCurrentPage={setCurrentPage}></NavComponent>

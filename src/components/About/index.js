@@ -8,9 +8,9 @@ function About(props) {
   const { pageSelected } = props;
   if (pageSelected === "about") {
     return (
-      <Container className="align-center mx-auto">
+      <Container className="align-center mx-auto about mb-2">
         <h1 className="text-center">About</h1>
-        <Row className="d-flex justify-content-center">
+        <Row className="d-flex justify-content-center align-items-center h-100 aboutBox">
           <Col xs={11} md={4}>
             <Image
               alt="Marielle Nwana"
@@ -18,9 +18,11 @@ function About(props) {
               id="self-photo"
               rounded
               fluid
+              className="aboutImg"
             />
           </Col>
-          <Col xs={11} md={5} className="text-center mt-2">
+          <Col xs={11} md={5} className="text-center mt-2 aboutText">
+            <div className="">
             <p> I'm Marielle Nwana and I'm an NYC-based Data Analyst.</p>
             <p>
               I have a proven understanding of data analytics and engineering
@@ -37,6 +39,7 @@ function About(props) {
               When I'm not working, I enjoy trying out new recipes, playing with
               my cat Molly, and exporing all that the Big Apple has to offer.
             </p>
+            </div>
           </Col>
         </Row>
       </Container>
