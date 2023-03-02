@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { Document, Page } from "react-pdf";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 // fix page breaks for resume file & sizing for mobile
 function Resume(props) {
   function getWindowDimensions() {
@@ -42,36 +44,38 @@ function Resume(props) {
     setPageNumber((prevPageNumber) => prevPageNumber + offset);
   }
 
-// switch proficiencies to left bullet
+  // switch proficiencies to left bullet
   if (pageSelected === "resume") {
     return (
-      <Container className="col-sm-12 col-md-6 mb-4 text-center vh-100 mx-auto justify-content-center resumeHolder">
-        <h1 className="mnTextSecondary">Resume</h1>
-        <h6>Proficiencies</h6>
-        <p className="mnTextDark">
-          {" "}
-          {`dbt | BigQuery | Airflow | Snowflake | SQL | NoSQL | MySQL | Fivetran | Python | Javascript`}{" "}
-        </p>
-        <div className="all-page-container">
-          <Document
-            className="justify-content-center mx-0"
-            file={props.resumeFile}
-            options={{ workerSrc: "/pdf.worker.js" }}
-            onLoadSuccess={onDocumentLoadSuccess}
-          >
-            {Array.from(new Array(numPages), (el, index) => (
-              <Page
-                key={`page_${index + 1}`}
-                pageNumber={index + 1}
-                scale={width>500 ? 1 : 0.6}
-                styles="width: window.innerWidth,height: window.innerHeight"
-              ></Page>
-            ))}
-          </Document>
-        </div>
-        <Button href={props.resumeFile} download="MarielleNwanaResume.PDF">
-          Download
-        </Button>
+      <Container className="text-center">
+        <h1 className="">Resume</h1>
+        <Row className="col-sm-12 mb-4 h-100 text-center vh-100 mx-auto justify-content-center resumeHolder">
+          <Col xs={12} md={12}>
+            <h6>Proficiencies</h6>
+            <p className="mb-0 h-100">
+              {`dbt | BigQuery | Airflow | Snowflake | SQL | NoSQL | MySQL | Fivetran | Python | Javascript`}
+            </p>
+          </Col>
+          <Col className="all-page-container  p-0" xs={12} md={6}>
+            <Button href={props.resumeFile} download="MarielleNwanaResume.PDF">
+              Download
+            </Button>
+            <Document
+              className="justify-content-center mx-0 p-0"
+              file={props.resumeFile}
+              options={{ workerSrc: "/pdf.worker.js" }}
+              onLoadSuccess={onDocumentLoadSuccess}
+            >
+              {Array.from(new Array(numPages), (el, index) => (
+                <Page
+                  key={`page_${index + 1}`}
+                  pageNumber={index + 1}
+                  scale={width > 500 ? 1 : 0.545}
+                ></Page>
+              ))}
+            </Document>
+          </Col>
+        </Row>
       </Container>
     );
   }

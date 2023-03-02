@@ -9,7 +9,7 @@ function About(props) {
   if (pageSelected === "about") {
     return (
       <Container className="align-center mx-auto">
-        <h1 className="text-center mnTextSecondary">About</h1>
+        <h1 className="text-center">About</h1>
         <Row className="d-flex justify-content-center">
           <Col xs={11} md={4}>
             <Image
