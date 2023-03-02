@@ -23,5 +23,8 @@ code {
   overflow: auto;
 }
 
+#profs{
+  max-height:100px;
+}
 
 

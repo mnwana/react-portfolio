@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 
 function FooterComponent() {
   return (
-    <footer className="sticky-bottom bg-light">
+    <footer className="fixed-bottom bg-light">
       <Container>
         <Nav
           className="d-flex justify-content-around"

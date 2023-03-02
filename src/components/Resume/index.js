@@ -49,15 +49,15 @@ function Resume(props) {
     return (
       <Container className="text-center">
         <h1 className="">Resume</h1>
-        <Row className="col-sm-12 mb-4 h-100 text-center vh-100 mx-auto justify-content-center resumeHolder">
-          <Col xs={12} md={12}>
+        <Row className="mb-0 pb-0 h-100 text-center mx-auto justify-content-center resumeHolder">
+          <Col xs={12} id="profs">
             <h6>Proficiencies</h6>
-            <p className="mb-0 h-100">
+            <p className="mb-0">
               {`dbt | BigQuery | Airflow | Snowflake | SQL | NoSQL | MySQL | Fivetran | Python | Javascript`}
             </p>
           </Col>
-          <Col className="all-page-container  p-0" xs={12} md={6}>
-            <Button href={props.resumeFile} download="MarielleNwanaResume.PDF">
+          <Col className="all-page-container mb-xl-0 p-0" xs={12} xl={6}>
+          <Button href={props.resumeFile} download="MarielleNwanaResume.PDF" className="mt-2" >
               Download
             </Button>
             <Document
