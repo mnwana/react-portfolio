@@ -4,7 +4,6 @@ import Card from "react-bootstrap/Card";
 import { projectOpenClickEvent } from "../../utils/ga4";
 
 function Projects(props) {
-  const { pageSelected } = props;
   const [projectSelected, setProjectSelected] = useState({});
   const [showModal, setShowModal] = useState(false);
 
@@ -124,43 +123,34 @@ function Projects(props) {
     setShowModal(!showModal);
   };
 
-  if (pageSelected === "projects") {
-    return (
-      <section className="text-center mb-4">
-        <h1>Projects</h1>
-        {showModal && (
-          <ModalComponent
-            onClose={toggleModal}
-            projectSelected={projectSelected}
-            show={showModal}
-          />
-        )}
-        <div className="row mx-auto justify-content-center">
-          {/* add 2 featured projects with gif, description and url in card*/}
-          {projects.map((project) => (
-            <Card
-              style={{ width: "24rem" }}
-              key={project.title}
-              className="m-2"
-            >
-              <Card.Title>{project.title}</Card.Title>
-              <Card.Img
-                alt={project.title}
-                src={
-                  require(`../../assets/projects/${project.fileName}`).default
-                }
-                onClick={() => {
-                  toggleModal(project);
-                  projectOpenClickEvent(project.title);
-                }}
-              />
-            </Card>
-          ))}
-        </div>
-      </section>
-    );
-  }
-  return;
+  return (
+    <section className="text-center mb-4">
+      <h1>Projects</h1>
+      {showModal && (
+        <ModalComponent
+          onClose={toggleModal}
+          projectSelected={projectSelected}
+          show={showModal}
+        />
+      )}
+      <div className="row mx-auto justify-content-center">
+        {/* add 2 featured projects with gif, description and url in card*/}
+        {projects.map((project) => (
+          <Card style={{ width: "24rem" }} key={project.title} className="m-2">
+            <Card.Title>{project.title}</Card.Title>
+            <Card.Img
+              alt={project.title}
+              src={require(`../../assets/projects/${project.fileName}`).default}
+              onClick={() => {
+                toggleModal(project);
+                projectOpenClickEvent(project.title);
+              }}
+            />
+          </Card>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Projects;

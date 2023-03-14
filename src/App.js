@@ -1,4 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import About from "./components/About";
 import FooterComponent from "./components/Footer";
 import Projects from "./components/Projects";
@@ -8,24 +14,24 @@ import TagManager from "react-gtm-module";
 import "bootstrap/dist/css/bootstrap.min.css";
 import resumeFile from "./assets/resume.pdf";
 
-function App() {
+// COMPONENT
+export default function App() {
   const tagManagerArgs = {
     gtmId: "GTM-N6QXHVV",
   };
   TagManager.initialize(tagManagerArgs);
-
-  const [pageSelected, setCurrentPage] = useState("about");
   return (
-    <div className="flex mb-2">
-      <NavComponent pageSelected={pageSelected} setCurrentPage={setCurrentPage}></NavComponent>
+    <Router>
+      <NavComponent />
       <main className="container flex-row p-2 align-items-center h-100">
-        <About pageSelected={pageSelected}></About>
-        <Projects pageSelected={pageSelected}></Projects>
-        <Resume pageSelected={pageSelected} resumeFile={resumeFile}></Resume>
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume resumeFile={resumeFile} />} />
+          <Route path="*" element={<Navigate to="/about" />} />
+        </Routes>
       </main>
-      <FooterComponent></FooterComponent>
-    </div>
+      <FooterComponent />
+    </Router>
   );
 }
-
-export default App;

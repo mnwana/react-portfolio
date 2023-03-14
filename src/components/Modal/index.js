@@ -25,7 +25,7 @@ function ModalComponent({ projectSelected, onClose, show }) {
       />
       <Modal.Body className="text-center">
         <p>{description}</p>
-        <h6>{formatLanguages(languages)}</h6>
+        <h6 className="languages">{formatLanguages(languages)}</h6>
       </Modal.Body>
       <Modal.Footer className="d-flex justify-content-around">
         <div>

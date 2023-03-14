@@ -3,8 +3,6 @@ import { footerClickEvent } from "../../utils/ga4";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
-// fix footer stickiness
-
 function FooterComponent() {
   return (
     <footer className="fixed-bottom bg-light">

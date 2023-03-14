@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("/hearts.png") repeat right top;  
+  background-size:15%;
 }
 
 html, body {
@@ -33,4 +35,9 @@ code {
 }
 .aboutImg{
   max-height: 550px;
+}
+
+.languages {
+  font-weight: normal;
+  font-size: smaller;
 }
