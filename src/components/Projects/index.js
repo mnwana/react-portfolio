@@ -74,7 +74,7 @@ function Projects(props) {
       description:
         "My Meds is a site built to help patients and health care providers manage medication lists.",
       repo: "https://github.com/mnwana/mymedlist",
-      deployment: "https://mymedlist.herokuapp.com/",
+      deployment: "https://mymedlistv2.herokuapp.com/",
     },
     {
       title: "Ecommerce Backend",
@@ -125,7 +125,7 @@ function Projects(props) {
 
   return (
     <section className="text-center mb-4">
-      <h1>Projects</h1>
+      <h1 className="pageTitle mx-auto">Projects</h1>
       {showModal && (
         <ModalComponent
           onClose={toggleModal}

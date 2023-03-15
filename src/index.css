@@ -31,13 +31,31 @@ code {
 
 
 .aboutBox{
-  min-height: 550px;
+  min-height: fit-content;
 }
 .aboutImg{
   max-height: 550px;
 }
 
+.aboutText {
+  background-color:rgba(255, 255, 255, 0.95);
+  min-height: fit-content;
+
+}
+
+.proficiencies {
+  background-color:rgba(255, 255, 255, 0.95);
+  width: fit-content;
+
+}
+
 .languages {
   font-weight: normal;
   font-size: smaller;
+}
+
+.pageTitle {
+  background-color:rgba(255, 255, 255, 0.75);
+  width: fit-content;
+  font-size: 70px;
 }

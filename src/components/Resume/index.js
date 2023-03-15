@@ -46,11 +46,11 @@ function Resume(props) {
   // switch proficiencies to left bullet
   return (
     <Container className="text-center">
-      <h1 className="">Resume</h1>
+      <h1 className="pageTitle mx-auto">Resume</h1>
       <Row className="mb-0 pb-0 h-100 text-center mx-auto justify-content-center resumeHolder">
         <Col xs={12} id="profs">
-          <h6>Proficiencies</h6>
-          <p className="mb-0">
+          <h6 className="proficiencies mx-auto">Proficiencies</h6>
+          <p className="mb-0 mx-auto proficiencies">
             {`dbt | BigQuery | Airflow | Snowflake | SQL | NoSQL | MySQL | Fivetran | Python | Javascript`}
           </p>
         </Col>
@@ -58,7 +58,7 @@ function Resume(props) {
           <Button
             href={props.resumeFile}
             download="MarielleNwanaResume.PDF"
-            className="mt-2"
+            className="mt-2 bg-dark"
           >
             Download
           </Button>
