@@ -2,6 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://www.mariellenwana.com",
   "dependencies": {
     "@coreui/react": "^4.6.0",
     "@elgorditosalsero/react-gtm-hook": "^2.6.0",
